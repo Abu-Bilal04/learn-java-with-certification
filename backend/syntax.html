@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Dashboard</title>
+	<meta charset="utf-8">
+  	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap-icons/bootstrap-icons.css">
+	<link href="../css/animate.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+	
+</head>
+<body>
+
+
+	<div class="container main">
+		<div class="row">
+			<div class="col-md-12">
+
+
+				<div class="blurred-box animate__animated animate__fadeInUp">
+					
+
+                  
+                    
+                    <h3>Java Syntax</h3>
+                    
+                    <p>In the previous chapter, we created a Java file called <code class="w3-codespan">Main.java</code>, and we used the following code to print "Hello World" to the screen:</p>
+                    
+                    <div class="w3-example">
+                    <p>Main.java</p>
+                    <pre class=" w3-white language-java"><code class=" language-java"><span class="token keyword keyword-public">public</span> <span class="token keyword keyword-class">class</span> <span class="token class-name">Main</span> <span class="token punctuation">{</span>
+                      <span class="token keyword keyword-public">public</span> <span class="token keyword keyword-static">static</span> <span class="token keyword keyword-void">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Hello World"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                      <span class="token punctuation">}</span>
+                    <span class="token punctuation">}</span>
+                    </code></pre>
+                    <p>
+                   
+                    </p></div>
+                    
+                    <h3>Example explained</h3>
+                    
+                    <p>Every line of code that runs in Java must be inside a <code class="w3-codespan">class</code>.
+                    In our example, we named the class <strong>Main</strong>. A class should always start with 
+                    an uppercase first letter.</p>
+                    <p><strong>Note:</strong> Java is case-sensitive: "MyClass" and "myclass" has 
+                    different meaning.</p>
+                    <p>The name of the java file <strong>must match</strong> the class name.
+                    When saving the file, save it using the class name and add ".java" to the end of 
+                    the filename. To run the example above on your computer, make sure that Java is 
+                    properly installed: Go to the <a href="java_getstarted.asp">Get Started Chapter</a> for how to install Java. The output should be:</p>
+                    <div class="w3-example w3-padding-16">
+                    <div class="notranslate w3-black w3-padding">
+                    <code class="notranslate">
+                    Hello World
+                    </code>
+                    </div>
+                    </div>
+                    
+                    <hr>
+                    
+                    <h2>The main Method</h2>
+                    <p>The <code class="w3-codespan">main()</code> method is required and you will 
+                    see it in every Java 
+                    program:</p>
+                    <div class="w3-example">
+                    <pre class=" w3-white language-java"><code class=" language-java"><span class="token keyword keyword-public">public</span> <span class="token keyword keyword-static">static</span> <span class="token keyword keyword-void">void</span> <span class="token function"><strong>main</strong></span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span>
+                    </code></pre>
+                    </div>
+                    <p>Any code inside the <code class="w3-codespan">main()</code> method will be executed. 
+                    Don't worry about the keywords before and after main. You will get to know 
+                    them bit by bit while reading this tutorial.</p>
+                    <p>For now, just remember that every Java program has a <code class="w3-codespan">class</code> name which 
+                    must match the filename, and that every program must contain the 
+                    <code class="w3-codespan">main()</code> method.</p>
+                  
+                    <hr>
+                    
+                    <h2>System.out.println()</h2>
+                    <p>Inside the <code class="w3-codespan">main()</code> method, we can use the <code class="w3-codespan">println()</code> 
+                    method to print a line of text to the screen:</p>
+                    <div class="w3-example">
+                    <pre class=" w3-white language-java"><code class=" language-java"><span class="token keyword keyword-public">public</span> <span class="token keyword keyword-static">static</span> <span class="token keyword keyword-void">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                      <span class="token class-name"></span><strong><span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Hello World"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></strong><span class="token punctuation"></span>
+                    <span class="token punctuation">}</span>
+                    </code></pre>
+                    <p>
+                    </p></div>
+                    <div class="w3-note w3-panel">
+                    <p><strong>Note:</strong> The curly braces <code class="w3-codespan">{}</code> marks the beginning and the end of a block of code.</p>
+                      <p><code class="w3-codespan">System</code> is a built-in Java class that contains useful members, such as <code class="w3-codespan">out</code>, 
+                      which is short for "output". The <code class="w3-codespan">println()</code> method, short for 
+                      "print line", is used to print a value to the screen (or a file).</p>
+                    <p>Don't worry too much about <code class="w3-codespan">System</code>, <code class="w3-codespan">out</code> and <code class="w3-codespan">println()</code>. Just know that you need them 
+                    together to print stuff to the screen.</p>
+                    <p>You should also note that each code statement must end with a semicolon (<code class="w3-codespan">;</code>).</p></div>
+                   
+                    
+                    <div>
+                   
+                    </div>
+                    </div>
+
+
+                
+                    <a href="intro.html"><button style="border: none;box-shadow: none;background-image: linear-gradient(to right, #1d87f8, #6774da);" class="btn btn-primary">Go Back</button></a>
+                    <a href="output.html"><button style="border: none;box-shadow: none;background-image: linear-gradient(to right, #1d87f8, #6774da);" class="btn btn-primary">Next page</button></a>
+				</div>
+
+				
+
+
+</div>
+</div>
+</div>
+<br><br><br>
+	<nav id="bottom_nav">
+           
+			
+		
+      <div class="row">
+        <div class="col-3 text-center">
+          <a href="index.html" id="index" style="border-bottom: 3px solid orange;"><i class="bi bi-house-door"></i></a>
+        </div>
+        <div class="col-3 text-center">
+          <a href="certificate.html" id="chat"><i class="bi bi-folder2-open"></i></a>
+        </div>
+        <div class="col-3 text-center">
+          <a href="../index.html"  id="profile"><i class="bi bi-reply"></i></a>
+        </div>
+        <div class="col-3 text-center">
+          <a href="quiz.html"  id="quiz"><i class="bi bi-play"></i></a>
+        </div>
+      </div>  
+            
+          
+        </nav>
+
+</body>
+</html>

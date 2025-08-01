@@ -1,0 +1,38 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Certificate generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+</head>
+<body style="background-image: url('bg2.png'); background-repeat: no-repeat;background-position: center; background-size: cover;">
+    <div id="container">
+       <div class="row">
+        <div class="col-md-3 col-2"></div>
+        <div class="col-md-6 col-8">
+            <form id="details" target="_blank" action="make_certificate.php" method="POST" enctype="multipart/form-data">
+                <div class="field mt-5">
+                    <b>ENTER YOUR NAME</b> <input id="name" name="name" class="textField form-control p-3">
+                </div>
+                <div class="field">
+                    <input id="event" name="event" value=" " class="textField" style="display: none ;">
+                </div>
+                <div class="field">
+                    <input type="submit" value="Submit" class="mt-3 form-control bg-primary" onclick="o()" style="color: white;">
+                </div>
+            </form>
+        </div>
+       </div>
+    </div>
+
+    <script>
+        function o() {
+            window.open("../backend/index.html", "_self");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Dashboard</title>
+	<meta charset="utf-8">
+  	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap-icons/bootstrap-icons.css">
+	<link href="../css/animate.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+	
+</head>
+<body>
+
+
+	<div class="container main">
+		<div class="row">
+			<div class="col-md-12">
+
+
+				<div class="blurred-box animate__animated animate__fadeInUp">
+					
+               
+                  
+                  <h3>Java Conditions and If Statements</h3>
+                  
+                  <p>Java supports the usual logical conditions from mathematics:</p>
+                  <ul>
+                  <li>Less than: <span class="w3-codespan">a &lt; b</span></li>
+                  <li>Less than or equal to: <span class="w3-codespan">a &lt;= b</span></li>
+                  <li>Greater than: <span class="w3-codespan">a &gt; b</span></li>
+                  <li>Greater than or equal to: <span class="w3-codespan">a &gt;= b</span></li>
+                  <li>Equal to <span class="w3-codespan">a == b</span></li>
+                  <li>Not Equal to: <span class="w3-codespan">a != b</span></li>
+                  </ul>
+                  <p>You can use these conditions to perform different actions for different decisions.</p>
+                  <p>Java has the following conditional statements:</p>
+                  <ul>
+                    <li>Use <code class="w3-codespan">if</code> to specify a block of code to be executed, if a specified condition is true</li>
+                    <li>Use <code class="w3-codespan">else</code> to specify a block of code to be executed, if the same condition is false</li>
+                    <li>Use <code class="w3-codespan">else if</code> to specify a new condition to test, if the first condition is false</li>
+                    <li>Use <code class="w3-codespan">switch</code> to specify many alternative blocks of code to be executed</li>
+                  </ul>
+                  
+                  <hr>
+                  
+                  <h3>The if Statement</h3>
+                  
+                  <p>Use the <code class="w3-codespan">if</code> statement to specify a block of Java code to be executed if a condition is <code class="w3-codespan">true</code>.</p>
+                  
+                  <div class="w3-example">
+                  <h3>Syntax</h3>
+                  <pre class=" w3-white language-java"><code class=" language-java"><span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span><em>condition</em><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token comment"><em>// block of code to be executed if the condition is true</em></span>
+                  <span class="token punctuation">}</span>
+                  </code></pre>
+                  </div>
+                  
+                  <div class="w3-panel w3-note">
+                  <p>Note that <code class="w3-codespan">if</code> is in lowercase letters. Uppercase letters (If or IF) will generate an error.</p>
+                  </div>
+                  <p>In the example below, we test two values to find out if 20 is greater than 
+                  18. If the condition is <code class="w3-codespan">true</code>, print some text:</p>
+                  <div class="w3-example">
+                  <h3>Example</h3>
+                  <pre class=" w3-white language-java"><code class=" language-java"><span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span><span class="token number">20</span> <span class="token operator">&gt;</span> <span class="token number">18</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"20 is greater than 18"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                  <span class="token punctuation">}</span>
+                  </code></pre>
+                 
+                  </div>
+                  
+                  <p>We can also test variables:</p>
+                  <div class="w3-example">
+                  <h3>Example</h3>
+                  <pre class=" w3-white language-java"><code class=" language-java"><span class="token keyword keyword-int">int</span> x <span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">;</span>
+                  <span class="token keyword keyword-int">int</span> y <span class="token operator">=</span> <span class="token number">18</span><span class="token punctuation">;</span>
+                  <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>x <span class="token operator">&gt;</span> y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"x is greater than y"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                  <span class="token punctuation">}</span>
+                  </code></pre>
+                 
+                  </div>
+                  <h4>Example explained</h4>
+                  <p>In the example above we use two variables, <strong>x</strong> and <strong>y</strong>, 
+                  to test whether x is greater than y 
+                  (using the <code class="w3-codespan">&gt;</code> operator). As x is 20, and y is 18, and we know that 20 is greater than 18, we print to the screen that "x is greater than y".</p>
+                  
+                  <hr>
+                 
+                  
+                  <h3>The else Statement</h3>
+                  <p>Use the <code class="w3-codespan">else</code> statement to specify a block of code to be executed if the condition is <code class="w3-codespan">false</code>.</p>
+                  
+                  <div class="w3-example">
+                  <h3>Syntax</h3>
+                  <pre class=" w3-white language-java"><code class=" language-java"><span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span><em>condition</em><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token comment"><em>// block of code to be executed if the condition is true</em></span>
+                  <span class="token punctuation">}</span> <span class="token keyword keyword-else">else</span> <span class="token punctuation">{</span>
+                    <span class="token comment"><em>// block of code to be executed if the condition is false</em></span>
+                  <span class="token punctuation">}</span>
+                  </code></pre>
+                  </div>
+                  
+                  <div class="w3-example">
+                  <h3>Example</h3>
+                  <pre class=" w3-white language-java" data-line="4"><code class=" language-java"><span class="token keyword keyword-int">int</span> time <span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">;</span>
+                  <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>time <span class="token operator">&lt;</span> <span class="token number">18</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Good day."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                  <span class="token punctuation">}</span> <span class="token keyword keyword-else">else</span> <span class="token punctuation">{</span>
+                    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Good evening."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                  <span class="token punctuation">}</span>
+                  <span class="token comment">// Outputs "Good evening."</span>
+                  <div aria-hidden="true" data-range="4" class=" line-highlight" data-start="4" style="top: 67.5px;"> 
+                  </div></code></pre>
+                 
+                  </div>
+                  <h4>Example explained</h4>
+                  <p>In the example above, time (20) is greater than 18, so the condition is <code class="w3-codespan">false</code>. 
+                  Because of this, we move on to the <code class="w3-codespan">else</code> condition and print to the screen "Good 
+                  evening". If the time was less than 18, the program would print "Good day".</p>
+                  <hr>
+                  
+                  <h3>The else if Statement</h3>
+                  
+                  <p>Use the <code class="w3-codespan">else if</code> statement to specify a new condition if the first condition is <code class="w3-codespan">false</code>.</p>
+                  
+                  <div class="w3-example">
+                  <h3>Syntax</h3>
+                  <pre class=" w3-white language-java" data-keep-tags="em"><code class=" language-java"><span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span><em>condition1</em><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token comment"><em>// block of code to be executed if condition1 is true</em></span>
+                  <span class="token punctuation">}</span> <span class="token keyword keyword-else">else</span> <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span><em>condition2</em><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token comment"><em>// block of code to be executed if the condition1 is false and condition2 is true</em></span>
+                  <span class="token punctuation">}</span> <span class="token keyword keyword-else">else</span> <span class="token punctuation">{</span>
+                    <span class="token comment"><em>// block of code to be executed if the condition1 is false and condition2 is false</em></span>
+                  <span class="token punctuation">}</span>
+                  </code></pre>
+                  </div>
+                  
+                  <div class="w3-example">
+                  <h3>Example</h3>
+                  <pre class=" w3-white language-java" data-line="4"><code class=" language-java"><span class="token keyword keyword-int">int</span> time <span class="token operator">=</span> <span class="token number">22</span><span class="token punctuation">;</span>
+                  <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>time <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Good morning."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                  <span class="token punctuation">}</span> <span class="token keyword keyword-else">else</span> <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>time <span class="token operator">&lt;</span> <span class="token number">20</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Good day."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                  <span class="token punctuation">}</span> <span class="token keyword keyword-else">else</span> <span class="token punctuation">{</span>
+                    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Good evening."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                  <span class="token punctuation">}</span>
+                  <span class="token comment">// Outputs "Good evening."</span>
+                  <div aria-hidden="true" data-range="4" class=" line-highlight" data-start="4" style="top: 67.5px;"> 
+                  </div></code></pre>
+                 
+                  </div>
+                  <h4>Example explained</h4>
+                  <p>In the example above, time (22) is greater than 10, so the <strong>first condition</strong> is <code class="w3-codespan">false</code>. The next condition, in the  
+                  <code class="w3-codespan">else if</code> statement, is also <code class="w3-codespan">false</code>, so we move on to the <code class="w3-codespan">else</code>
+                  condition since <strong>condition1</strong> and <strong>condition2</strong> is both <code class="w3-codespan">false</code> - and print to the screen "Good 
+                  evening".</p>
+                  <p>However, if the time was 14, our program would print "Good day."</p>
+                  <hr>
+                 
+
+
+                <br>
+                    <a href="strings.html"><button style="border: none;box-shadow: none;background-image: linear-gradient(to right, #1d87f8, #6774da);" class="btn btn-primary">Go Back</button></a>
+                    <a href="switch.html"><button style="border: none;box-shadow: none;background-image: linear-gradient(to right, #1d87f8, #6774da);" class="btn btn-primary">Next page</button></a>
+				</div>
+
+				
+
+
+</div>
+</div>
+</div>
+</div>
+<br><br><br>
+	<nav id="bottom_nav">
+           
+			
+			
+      <div class="row">
+        <div class="col-3 text-center">
+          <a href="index.html" id="index" style="border-bottom: 3px solid orange;"><i class="bi bi-house-door"></i></a>
+        </div>
+        <div class="col-3 text-center">
+          <a href="certificate.html" id="chat"><i class="bi bi-folder2-open"></i></a>
+        </div>
+        <div class="col-3 text-center">
+          <a href="../index.html"  id="profile"><i class="bi bi-reply"></i></a>
+        </div>
+        <div class="col-3 text-center">
+          <a href="quiz.html"  id="quiz"><i class="bi bi-play"></i></a>
+        </div>
+      </div>  
+            
+            
+          
+        </nav>
+
+</body>
+</html>

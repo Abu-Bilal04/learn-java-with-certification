@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Dashboard</title>
+	<meta charset="utf-8">
+  	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap-icons/bootstrap-icons.css">
+	<link href="../css/animate.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+	
+</head>
+<body>
+
+
+	<div class="container main">
+		<div class="row">
+			<div class="col-md-12">
+
+
+				<div class="blurred-box animate__animated animate__fadeInUp">
+					
+               
+
+                  
+                  <h3>Java Switch Statements</h3>
+                  
+                  <p>Use the <code class="w3-codespan">switch</code> statement to select one of many code blocks to be executed.</p>
+                  
+                  <div class="w3-example">
+                  <h3>Syntax</h3>
+                  <pre class=" w3-white language-java"><code class=" language-java"><span class="token keyword keyword-switch">switch</span><span class="token punctuation">(</span><em>expression</em><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token keyword keyword-case">case</span> x<span class="token operator">:</span>
+                      <span class="token comment"><em>// code block</em></span>
+                      <span class="token keyword keyword-break">break</span><span class="token punctuation">;</span>
+                    <span class="token keyword keyword-case">case</span> y<span class="token operator">:</span>
+                      <span class="token comment"><em>// code block</em></span>
+                      <span class="token keyword keyword-break">break</span><span class="token punctuation">;</span>
+                    <span class="token keyword keyword-default">default</span><span class="token operator">:</span>
+                      <span class="token comment"><em>// code block</em></span>
+                  <span class="token punctuation">}</span>
+                  </code></pre>
+                  </div>
+                  
+                  <p>This is how it works:</p>
+                  <ul>
+                  <li>The <code class="w3-codespan">switch</code> expression is evaluated once.</li>
+                  <li>The value of the expression is compared with the values of each <code class="w3-codespan">case</code>.</li>
+                  <li>If there is a match, the associated block of code is executed.</li>
+                  <li>The <code class="w3-codespan">break</code> and <code class="w3-codespan">default</code> keywords are optional, and will be described later in this chapter</li>
+                  </ul>
+                  <p>The example below uses the weekday number to calculate the weekday name:</p>
+                  <div class="w3-example">
+                  <h3>Example</h3>
+                  <pre class=" w3-white language-java"><code class=" language-java"><span class="token keyword keyword-int">int</span> day <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span>
+                  <span class="token keyword keyword-switch">switch</span> <span class="token punctuation">(</span>day<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token keyword keyword-case">case</span> <span class="token number">1</span><span class="token operator">:</span>
+                      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Monday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                      <span class="token keyword keyword-break">break</span><span class="token punctuation">;</span>
+                    <span class="token keyword keyword-case">case</span> <span class="token number">2</span><span class="token operator">:</span>
+                      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Tuesday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                      <span class="token keyword keyword-break">break</span><span class="token punctuation">;</span>
+                    <span class="token keyword keyword-case">case</span> <span class="token number">3</span><span class="token operator">:</span>
+                      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Wednesday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                      <span class="token keyword keyword-break">break</span><span class="token punctuation">;</span>
+                    <span class="token keyword keyword-case">case</span> <span class="token number">4</span><span class="token operator">:</span>
+                      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Thursday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                      <span class="token keyword keyword-break">break</span><span class="token punctuation">;</span>
+                    <span class="token keyword keyword-case">case</span> <span class="token number">5</span><span class="token operator">:</span>
+                      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Friday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                      <span class="token keyword keyword-break">break</span><span class="token punctuation">;</span>
+                    <span class="token keyword keyword-case">case</span> <span class="token number">6</span><span class="token operator">:</span>
+                      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Saturday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                      <span class="token keyword keyword-break">break</span><span class="token punctuation">;</span>
+                    <span class="token keyword keyword-case">case</span> <span class="token number">7</span><span class="token operator">:</span>
+                      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Sunday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                      <span class="token keyword keyword-break">break</span><span class="token punctuation">;</span>
+                  <span class="token punctuation">}</span>
+                  <span class="token comment">// Outputs "Thursday" (day 4)</span>
+                  </code></pre>
+                  
+                  </div>
+                  <hr>
+                  
+                  <h3>The break Keyword</h3>
+                  <p>When Java reaches a <code class="w3-codespan">break</code> 
+                  keyword, it breaks out of the switch block.</p>
+                  <p>This will stop the execution of more code and case testing inside 
+                  the block.</p>
+                  <p>When a match is found, and the job is done, it's time for a break. There is no need for more testing.</p>
+                  
+                  <div class="w3-panel w3-note">
+                  <p>A break can save a lot of execution time because it "ignores" the execution 
+                  of all the rest of the code in the switch block.</p>
+                  </div>
+                  
+                  
+                  <h3>The default Keyword</h3>
+                  <p>The <code class="w3-codespan">default</code> keyword specifies some code to run if there is no 
+                  case match:</p>
+                  <div class="w3-example">
+                  <h3>Example</h3>
+                  <pre class=" w3-white language-java" data-line="9"><code class=" language-java"><span class="token keyword keyword-int">int</span> day <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span>
+                  <span class="token keyword keyword-switch">switch</span> <span class="token punctuation">(</span>day<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token keyword keyword-case">case</span> <span class="token number">6</span><span class="token operator">:</span>
+                      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Today is Saturday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                      <span class="token keyword keyword-break">break</span><span class="token punctuation">;</span>
+                    <span class="token keyword keyword-case">case</span> <span class="token number">7</span><span class="token operator">:</span>
+                      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Today is Sunday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                      <span class="token keyword keyword-break">break</span><span class="token punctuation">;</span>
+                    <span class="token keyword keyword-default">default</span><span class="token operator">:</span>
+                      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Looking forward to the Weekend"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                  <span class="token punctuation">}</span>
+                  <span class="token comment">// Outputs "Looking forward to the Weekend"</span>
+                  <div aria-hidden="true" data-range="9" class=" line-highlight" data-start="9" style="top: 180px;"> 
+                  </div></code></pre>
+               
+                  </div>
+                  <div class="w3-panel w3-note">
+                  <p>Note that if the <code class="w3-codespan">default</code> statement is used 
+                  as the last statement in a switch block, it does not need a break.</p>
+                  </div>
+                 
+
+
+
+
+                <br>
+                    <a href="ifelse.html"><button style="border: none;box-shadow: none;background-image: linear-gradient(to right, #1d87f8, #6774da);" class="btn btn-primary">Go Back</button></a>
+                    <a href="whileloop.html"><button style="border: none;box-shadow: none;background-image: linear-gradient(to right, #1d87f8, #6774da);" class="btn btn-primary">Next page</button></a>
+				</div>
+
+				
+
+
+</div>
+</div>
+</div>
+</div>
+<br><br><br>
+	<nav id="bottom_nav">
+           
+			
+			
+      <div class="row">
+        <div class="col-3 text-center">
+          <a href="index.html" id="index" style="border-bottom: 3px solid orange;"><i class="bi bi-house-door"></i></a>
+        </div>
+        <div class="col-3 text-center">
+          <a href="certificate.html" id="chat"><i class="bi bi-folder2-open"></i></a>
+        </div>
+        <div class="col-3 text-center">
+          <a href="../index.html"  id="profile"><i class="bi bi-reply"></i></a>
+        </div>
+        <div class="col-3 text-center">
+          <a href="quiz.html"  id="quiz"><i class="bi bi-play"></i></a>
+        </div>
+      </div>  
+            
+            
+          
+        </nav>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Dashboard</title>
+	<meta charset="utf-8">
+  	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap-icons/bootstrap-icons.css">
+	<link href="../css/animate.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+	<style>
+		#btn0, #btn1, #btn2, #btn3 {
+    background-color: #cddde7
+    font-size: 15px;
+     width: 100%;
+    color: #000;
+    border: none;
+   margin-bottom: 10px;
+    padding: 7px 7px;
+    border-radius: 40px;
+    text-align: left !important;
+}
+#question {
+    font-size: 16px;
+    color: #000;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+}
+#opt{
+  background-color: #e78330;
+  margin-left: -5px;
+    border-radius: 40px 0px 0px 40px;
+  padding: 7px;
+}
+#score {
+    color: #fff;
+    text-align: center;
+}
+#res{
+   background-color: #e78330;
+  color: #000;
+    text-align: center;
+  
+
+}
+#try{
+  background-color: #cddde7
+    font-size: 15px;
+    color: #000;
+    border: none;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 10px;
+}
+body{
+   background-image: linear-gradient(to right, #1d87f8, #6774da);
+}
+	</style>
+</head>
+<body>
+
+
+	<div class="container main">
+		<div class="row">
+			<div class="col-md-12">
+
+
+				<div class="blurred-box animate__animated animate__fadeInUp">
+					<h3 style="color: #fff;">Hello, Welcome!</h3>
+					<p style="color: #fff;">Test your Java Skills</p>
+					<br>
+				</div>
+			<div id="quiz">
+                  <h5 align="center" style="background-color: #cddde7;padding: 8px;">Java Quiz | 20 Questions</h5>
+
+            <p id="question"></p>
+ 
+            <div class="buttons">
+                <button id="btn0"> <span id="opt">A.</span> <span id="choice0"></span></button>
+                <button id="btn1"> <span id="opt">B.</span> <span id="choice1"></span></button>
+                <button id="btn2"> <span id="opt">C.</span> <span id="choice2"></span></button>
+                <button id="btn3"> <span id="opt">D.</span> <span id="choice3"></span></button>
+            </div>
+ 
+            <footer>
+                <p id="progress" style="color: #fff;">Question x of y</p>
+            </footer>
+               </div>
+             </div>
+           </div>
+</div>
+
+
+	<nav id="bottom_nav">
+           
+			
+			<div class="row">
+				<div class="col-3 text-center">
+					<a href="index.html" id="index" style="border-bottom: 3px solid orange;"><i class="bi bi-house-door"></i></a>
+				</div>
+				<div class="col-3 text-center">
+					<a href="certificate.html" id="chat"><i class="bi bi-folder2-open"></i></a>
+				</div>
+				<div class="col-3 text-center">
+					<a href="../index.html"  id="profile"><i class="bi bi-reply"></i></a>
+				</div>
+				<div class="col-3 text-center">
+					<a href="quiz.html"  id="quizx"><i class="bi bi-play"></i></a>
+				</div>
+			</div>	
+            
+          
+        </nav>
+  <script src="question.js"></script>
+</body>
+</html>
