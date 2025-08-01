@@ -6,7 +6,9 @@
 * Date:    2015-12-20                                                          *
 * Author:  Olivier PLATHEY                                                     *
 *******************************************************************************/
-ini_set("memory_limit","16M");
+// ini_set("memory_limit","16M");
+ini_set('memory_limit', '128M'); 
+
 define('FPDF_VERSION','1.81');
 
 class FPDF
